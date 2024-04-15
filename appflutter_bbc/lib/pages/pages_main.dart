@@ -1,7 +1,9 @@
+import 'package:appflutter_bbc/components/my_noticiaSplit.dart';
 import 'package:flutter/material.dart';
+import '../components/my_noticiaPrincipal.dart';
 
-class MyNews extends StatelessWidget {
-  const MyNews({super.key});
+class MyNewsScreen extends StatelessWidget {
+  const MyNewsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,38 +12,42 @@ class MyNews extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Center(
-          child: ListView(padding: const EdgeInsets.all(10), children: <Widget>[
+          child: ListView(children: <Widget>[
             Container(
+              //margin: const EdgeInsets.all(5.0),
               height: 400,
-              color: Colors.amber[600],
-              child: const Center(child: Text('Entry A')),
+              //color: Colors.amber[600],
+              child: MyNoticiaPrincipal(),
             ),
             Container(
-              height: 50,
-              color: Colors.amber[500],
+              //margin: const EdgeInsets.all(5.0),
+              height: 250,
               child: const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Center(child: Text('Entry B')),
-                  Center(child: Text('Entry B'))
+                  Expanded(flex: 1, child: MyNoticiaSplit()),
+                  Expanded(flex: 1, child: MyNoticiaSplit())
                 ],
               ),
             ),
             Container(
-              height: 50,
-              color: Colors.amber[100],
-              child: const Center(child: Text('Entry C')),
+              height: 100,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  SizedBox(
+                      width: 100,
+                      child: Image.asset('lib/images/noticiaPrincipal.png',
+                          fit: BoxFit.fill)),
+                  Column(
+                    children: [
+                      SizedBox(child: Text('Titulo')),
+                      SizedBox(child: Text('Item'))
+                    ],
+                  )
+                ],
+              ),
             ),
-            Container(
-              height: 50,
-              color: Colors.amber[100],
-              child: const Center(child: Text('Entry C')),
-            ),
-            Container(
-              height: 50,
-              color: Colors.amber[100],
-              child: const Center(child: Text('Entry C')),
-            )
           ]),
         ),
       ),

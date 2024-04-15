@@ -1,4 +1,5 @@
 import 'package:appflutter_bbc/pages/pages_main.dart';
+import 'package:appflutter_bbc/pages/pages_scores.dart';
 import 'package:flutter/material.dart';
 
 class BottomTabBar extends StatefulWidget {
@@ -10,7 +11,11 @@ class BottomTabBar extends StatefulWidget {
 
 class _BottomTabBarState extends State<BottomTabBar> {
   int _index = 0;
-  final screens = [const MyNews(), const Text('asd1'), const Text('ásd3')];
+  final screens = [
+    const MyScoreScreen(),
+    const MyNewsScreen(),
+    const Text('ásd3')
+  ];
   final Color _iconColorSelected = const Color.fromRGBO(255, 210, 48, 1);
   final Color _iconColorunSelected = const Color.fromRGBO(246, 246, 246, 1);
 
