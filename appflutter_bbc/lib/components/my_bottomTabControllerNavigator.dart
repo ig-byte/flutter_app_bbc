@@ -1,3 +1,4 @@
+import 'package:appflutter_bbc/pages/pages_guide.dart';
 import 'package:appflutter_bbc/pages/pages_main.dart';
 import 'package:appflutter_bbc/pages/pages_scores.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +15,7 @@ class _BottomTabBarState extends State<BottomTabBar> {
   final screens = [
     const MyScoreScreen(),
     const MyNewsScreen(),
-    const Text('ásd3')
+    MyGuideScreen()
   ];
   final Color _iconColorSelected = const Color.fromRGBO(255, 210, 48, 1);
   final Color _iconColorunSelected = const Color.fromRGBO(246, 246, 246, 1);
