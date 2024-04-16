@@ -22,28 +22,25 @@ class MyScoreScreen extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     children: const [
                       Center(
-                          child: Text("Football >",
+                          child: Text("   Football >",
                               style: TextStyle(color: Colors.white))),
                       Center(
-                          child: Text("Football >",
+                          child: Text("Cricket | ",
                               style: TextStyle(color: Colors.white))),
                       Center(
-                          child: Text("Football >",
+                          child: Text("Rugby Union | ",
                               style: TextStyle(color: Colors.white))),
                       Center(
-                          child: Text("Football >",
+                          child: Text("Basquetball | ",
                               style: TextStyle(color: Colors.white))),
                       Center(
-                          child: Text("Football >",
+                          child: Text("Tennis | ",
                               style: TextStyle(color: Colors.white))),
                       Center(
-                          child: Text("Football >",
+                          child: Text("Padel | ",
                               style: TextStyle(color: Colors.white))),
                       Center(
-                          child: Text("Football >",
-                              style: TextStyle(color: Colors.white))),
-                      Center(
-                          child: Text("Football >",
+                          child: Text("Boxeo >",
                               style: TextStyle(color: Colors.white))),
                     ],
                   ),
@@ -71,14 +68,14 @@ class MyScoreScreen extends StatelessWidget {
                   alignment: Alignment.center,
                   height: 60,
                   child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 10),
+                    padding: const EdgeInsets.symmetric(horizontal: 10),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Padding(
-                          padding: EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(8.0),
                           child: Container(
-                            child: Column(
+                            child: const Column(
                               children: [
                                 Text("FRI",
                                     style: TextStyle(color: Colors.white)),
@@ -88,7 +85,7 @@ class MyScoreScreen extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Column(
                             children: [
@@ -99,7 +96,7 @@ class MyScoreScreen extends StatelessWidget {
                             ],
                           ),
                         ),
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Column(
                             children: [
@@ -110,7 +107,7 @@ class MyScoreScreen extends StatelessWidget {
                             ],
                           ),
                         ),
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Column(
                             children: [
@@ -121,7 +118,7 @@ class MyScoreScreen extends StatelessWidget {
                             ],
                           ),
                         ),
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Column(
                             children: [

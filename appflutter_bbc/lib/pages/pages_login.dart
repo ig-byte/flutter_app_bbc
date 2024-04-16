@@ -6,20 +6,6 @@ Esta ventana tiene los campos de correo electronico y contraseña,
 en donde se muestra el teclado como entrada
 */
 
-class BlackBackground extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Simple Web App',
-      theme: ThemeData(
-        scaffoldBackgroundColor:
-            Colors.lightGreenAccent, // Set the background color
-      ),
-      home: const LoginScreen(), // Setting HomePage as the initial route
-    );
-  }
-}
-
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
