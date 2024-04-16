@@ -1,6 +1,6 @@
-import 'package:appflutter_bbc/components/my_noticiaSplit.dart';
 import 'package:flutter/material.dart';
 import '../components/my_noticiaPrincipal.dart';
+import 'package:appflutter_bbc/components/paths_components.dart';
 
 class MyNewsScreen extends StatelessWidget {
   const MyNewsScreen({super.key});
@@ -14,40 +14,43 @@ class MyNewsScreen extends StatelessWidget {
         body: Center(
           child: ListView(children: <Widget>[
             Container(
-              //margin: const EdgeInsets.all(5.0),
-              height: 400,
-              //color: Colors.amber[600],
-              child: MyNoticiaPrincipal(),
+              margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+              height: 425,
+              child: const MyNoticiaPrincipal(),
             ),
             Container(
-              //margin: const EdgeInsets.all(5.0),
-              height: 250,
+              margin: const EdgeInsets.symmetric(horizontal: 20),
+              height: 200,
               child: const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Expanded(flex: 1, child: MyNoticiaSplit()),
-                  Expanded(flex: 1, child: MyNoticiaSplit())
+                  Expanded(
+                      flex: 1,
+                      child: MyNoticiaSplit(
+                          imagen: 'lib/images/noticia_dos.png',
+                          titulo:
+                              "'Scintillating Scheffler lives up to expectation as Aberg arrives'")),
+                  SizedBox(width: 10),
+                  Expanded(
+                      flex: 1,
+                      child: MyNoticiaSplit(
+                          imagen: 'lib/images/noticia_tres.png',
+                          titulo:
+                              "Who gave their heart and soul? Garth Crooks' Team of the Week"))
                 ],
               ),
             ),
-            Container(
-              height: 100,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  SizedBox(
-                      width: 100,
-                      child: Image.asset('lib/images/noticiaPrincipal.png',
-                          fit: BoxFit.fill)),
-                  Column(
-                    children: [
-                      SizedBox(child: Text('Titulo')),
-                      SizedBox(child: Text('Item'))
-                    ],
-                  )
-                ],
-              ),
+            const NoticiaMedium(
+              imagen: 'lib/images/noticia_cinco.png',
+              titulo: "Everton points appeal case to be heard 'urgently'",
             ),
+            const SizedBox(
+              height: 20,
+            ),
+            const NoticiaMedium(
+              imagen: 'lib/images/noticia_cuatro.png',
+              titulo: "Women's event at Queen's dependent on grass condition",
+            )
           ]),
         ),
       ),

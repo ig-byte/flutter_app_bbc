@@ -5,3 +5,5 @@ export 'package:appflutter_bbc/components/my_listviewScore.dart';
 export 'package:appflutter_bbc/components/my_button.dart';
 export 'package:appflutter_bbc/components/my_textfield.dart';
 export 'package:appflutter_bbc/components/my_textBold.dart';
+export 'package:appflutter_bbc/components/my_noticiaMedium.dart';
+export 'package:appflutter_bbc/components/my_noticiaSplit.dart';

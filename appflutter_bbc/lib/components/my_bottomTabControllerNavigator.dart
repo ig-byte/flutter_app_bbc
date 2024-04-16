@@ -13,8 +13,8 @@ class BottomTabBar extends StatefulWidget {
 class _BottomTabBarState extends State<BottomTabBar> {
   int _index = 0;
   final screens = [
-    const MyScoreScreen(),
     const MyNewsScreen(),
+    const MyScoreScreen(),
     MyGuideScreen()
   ];
   final Color _iconColorSelected = const Color.fromRGBO(255, 210, 48, 1);
@@ -36,16 +36,15 @@ class _BottomTabBarState extends State<BottomTabBar> {
             unselectedItemColor: _iconColorunSelected,
             items: const [
               BottomNavigationBarItem(
-                //backgroundColor: Colors.amber,
                 icon: Icon(Icons.home),
                 label: 'Home',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.backup_table),
+                icon: Icon(Icons.sports_soccer),
                 label: 'Score',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.backup_table),
+                icon: Icon(Icons.live_tv_rounded),
                 label: 'Guide',
               ),
             ]));

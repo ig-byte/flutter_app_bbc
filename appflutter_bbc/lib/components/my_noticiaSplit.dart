@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
 class MyNoticiaSplit extends StatelessWidget {
+  final String imagen;
+  final String titulo;
+
   const MyNoticiaSplit({
     super.key,
+    required this.imagen,
+    required this.titulo,
   });
 
   @override
@@ -13,10 +18,13 @@ class MyNoticiaSplit extends StatelessWidget {
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Image.asset('lib/images/noticiaPrincipal.png'),
-            const Text(
-              'Título de la noticia',
-              style: TextStyle(
+            Image.asset(imagen),
+            const SizedBox(
+              height: 10,
+            ),
+            Text(
+              titulo,
+              style: const TextStyle(
                 //fontSize: 24,
                 fontWeight: FontWeight.bold,
               ),

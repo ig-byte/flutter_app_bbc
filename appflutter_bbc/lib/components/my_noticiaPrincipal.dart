@@ -15,13 +15,13 @@ class MyNoticiaPrincipal extends StatelessWidget {
           children: [
             // Imagen
             Image.asset(
-              'lib/images/noticiaPrincipal.png', // URL de tu imagen
+              'lib/images/noticia_uno.png', // URL de tu imagen
               fit: BoxFit.cover,
             ),
             const SizedBox(height: 16), // Espacio entre la imagen y el título
             // Título
             const Text(
-              'Título de la noticia',
+              "'Amazing' Palmer produces again but can he really win Golden Boot?.",
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
@@ -30,7 +30,7 @@ class MyNoticiaPrincipal extends StatelessWidget {
             const SizedBox(height: 8), // Espacio entre el título y el párrafo
             // Párrafo
             const Text(
-              'Descripción de la noticia. Aquí puedes agregar un párrafo largo que contenga la información principal de la noticia.',
+              "That is what former Arsenal striker Alan Smith said of Chelsea's Cole Palmer on Sky Sports after the midfielder struck four goals in his side's 6-0 thrashing over Everton.",
               style: TextStyle(fontSize: 16),
             ),
           ],
